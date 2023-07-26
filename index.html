@@ -86,11 +86,11 @@
       </div>
 
       <!-- BANNER-SECTION -->
-      <div class="carousel relative w-full mt-9 ">
+      <div class="carousel relative w-full mt-9  min-h-[calc(100vh-100px)] bg-gradient-to-r from-[#12121299] to-[#12121299] opacity-80">
         <!-- SLIDER-01 -->
         <div
           id="slide1"
-          class="carousel-item w-full relative bg-no-repeat rounded-lg min-h-[calc(100vh-100px)] bg-gradient-to-t from-[#121212] to-[#12121200]" style="background-image: url('./images/banner1.png');"
+          class="carousel-item w-full relative bg-cover bg-no-repeat rounded-lg bg-gradient-to-t from-[#121212] to-[#12121200]" style="background-image: url('./images/banner1.png');"
         >
           <div class="flex items-center mx-auto">
             <div class="text-center space-y-5">
@@ -111,14 +111,14 @@
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
+            <a href="#slide4" class="btn btn-circle bg-[#12121299] text-white border-none">❮</a>
+            <a href="#slide2" class="btn btn-circle  bg-[#12121299] text-white border-none">❯</a>
           </div>
         </div>
         <!-- SLIDER-02 -->
         <div
           id="slide2"
-          class="carousel-item relative py-10 md:py-0 w-full rounded-lg min-h-[calc(100vh-100px)] bg-gradient-to-t from-[#121212] to-[#12121200]"
+          class="carousel-item relative bg-cover bg-no-repeat py-10 md:py-0 w-full rounded-lg max-h-screen bg-gradient-to-t from-[#121212] to-[#12121200]"
           style="background-image: url('./images/banner2.png')"
         >
           <div class="flex items-center mx-auto">
@@ -140,14 +140,14 @@
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
+            <a href="#slide1" class="btn btn-circle bg-[#12121299] text-white border-none">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-[#12121299] text-white border-none">❯</a>
           </div>
         </div>
         <!-- SLIDER-03 -->
         <div
           id="slide3"
-          class="carousel-item relative w-full rounded-lg min-h-[calc(100vh-100px)] bg-gradient-to-t from-[#121212] to-[#12121200]"
+          class="carousel-item relative w-full bg-cover bg-no-repeat rounded-lg max-h-screen bg-gradient-to-t from-[#121212] to-[#12121200]"
           style="background-image: url('./images/banner3.png')"
         >
           <div class="flex items-center mx-auto">
@@ -169,15 +169,15 @@
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide4" class="btn btn-circle">❯</a>
+            <a href="#slide2" class="btn btn-circle bg-[#12121299] text-white border-none">❮</a>
+            <a href="#slide4" class="btn btn-circle bg-[#12121299] text-white border-none">❯</a>
           </div>
         </div>
 
         <!-- SLIDER-04 -->
         <div
           id="slide4"
-          class="carousel-item relative w-full rounded-lg min-h-[calc(100vh-100px)] bg-gradient-to-t from-[#121212] to-[#12121200]"
+          class="carousel-item relative w-full bg-cover bg-no-repeat rounded-lg max-h-screen bg-gradient-to-t from-[#121212] to-[#12121200]"
           style="background-image: url('./images/banner3.png')"
         >
           <div class="flex items-center mx-auto">
@@ -199,8 +199,8 @@
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
+            <a href="#slide3" class="btn btn-circle bg-[#12121299] text-white border-none">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-[#12121299] text-white border-none">❯</a>
           </div>
         </div>
 
@@ -208,7 +208,7 @@
 
       <!-- BRAND-AREA -->
 
-      <div class="-mt-28 hidden lg:block relative z-10 max-w-6xl mx-auto bg-white shadow-xl py-12">
+      <div class="-mt-28 hidden lg:block relative z-10 max-w-6xl mx-auto rounded-lg bg-white shadow-xl py-12">
         <div class="flex justify-around ">
             <img src="images/fruit1.png" alt="">
             <img src="images/fruit2.png" alt="">
@@ -238,23 +238,30 @@
           
           <div class="flex flex-col">
             <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
-            <span class="countdown font-extrabold text-5xl">
+            <span class="countdown font-extrabold text-5xl items-center flex">
               <span style="--value:29;"></span>
+              <i class="fa-solid fa-ellipsis-vertical text-xl ml-3"></i>
+
             </span>
             
             days
             
           </div> 
           <div class="flex flex-col">
-            <span class="countdown font-extrabold text-5xl">
+            
+            <span class="countdown font-extrabold text-5xl  items-center flex">
               <span style="--value:15;"></span>
+              <i class="fa-solid fa-ellipsis-vertical text-xl ml-3"></i>
             </span>
             hours
+            
           </div> 
 
           <div class="flex flex-col">
-            <span class="countdown font-extrabold text-5xl">
+            <span class="countdown font-extrabold text-5xl items-center flex">
               <span style="--value:25;"></span>
+              <i class="fa-solid fa-ellipsis-vertical text-xl ml-3"></i>
+
             </span>
             min
           </div> 
@@ -903,8 +910,8 @@
 
       <!-- TESTIMONIAL -->
 
-      <section class="py-16">
-        <div class="py-28 min-h-screen bg-no-repeat bg-cover " style="background-image: url(./images/team.png);">
+      <section class="py-16 ">
+        <div class="py-28 max-h-screen bg-no-repeat bg-cover bg-[#000] opacity-70" style="background-image: url(./images/team.png);">
           <div class="hero-overlay  bg-opacity-10"></div>
           <div class=" text-center flex justify-center">
             <div class="max-w-xl space-x-3">
@@ -920,7 +927,7 @@
               <img src="images/member1.png" alt="" class="w-1/4 mx-auto mb-4">
               <h3 class="text-2xl font-bold text-white">Awlad Hossain</h3>
               <span class="text-base font-medium text-white">Fruits Expert</span>
-              <div class="icon text-[#FFF] text-2xl">
+              <div class="icon text-[#F85559] text-2xl">
                 <i class="fa-brands fa-facebook "></i>
                 <i class="fa-brands fa-twitter "></i>
                 <i class="fa-brands fa-linkedin "></i>
@@ -930,7 +937,7 @@
               <img src="images/member2.png" alt="" class="w-1/4 mx-auto mb-4">
               <h3 class="text-2xl font-bold text-white">Safia Chowdhury</h3>
               <span class="text-base font-medium text-white">Fruits Expert</span>
-              <div class="icon text-[#FFF] text-2xl">
+              <div class="icon text-[#F85559] text-2xl">
                 <i class="fa-brands fa-facebook "></i>
                 <i class="fa-brands fa-twitter "></i>
                 <i class="fa-brands fa-linkedin "></i>
@@ -940,7 +947,7 @@
               <img src="images/member3.png" alt="" class="w-1/4 mx-auto mb-4">
               <h3 class="text-2xl font-bold text-white">Rokib Hossain</h3>
               <span class="text-base font-medium text-white">Fruits Expert</span>
-              <div class="icon text-[#FFF] text-2xl">
+              <div class="icon text-[#F85559] text-2xl">
                 <i class="fa-brands fa-facebook "></i>
                 <i class="fa-brands fa-twitter "></i>
                 <i class="fa-brands fa-linkedin "></i>
@@ -950,7 +957,7 @@
               <img src="images/member4.png" alt="" class="w-1/4 mx-auto mb-4">
               <h3 class="text-2xl font-bold text-white">Chaity</h3>
               <span class="text-base font-medium text-white">Fruits Expert</span>
-              <div class="icon text-[#FFF] text-2xl">
+              <div class="icon text-[#F85559] text-2xl">
                 <i class="fa-brands fa-facebook "></i>
                 <i class="fa-brands fa-twitter "></i>
                 <i class="fa-brands fa-linkedin "></i>
